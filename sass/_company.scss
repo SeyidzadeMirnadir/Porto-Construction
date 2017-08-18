@@ -1,0 +1,295 @@
+@import "variables";
+@import "mixins";
+
+// company01 section start
+#company01{
+	height: 250px;
+	width: 100%;
+	background: $sectioncolor;
+	.container{
+		.row{
+			.col-md-12{
+				text-align: right;
+				h1{
+					margin-top:161px; 
+					font-family: $mainfont;
+					font-size: 2.6em; 
+					color:$orange;
+					font-weight: 300;
+				}
+			}
+		}
+	}
+}
+// company01 section end
+
+// company02 section start
+#company02{
+	padding-top: 40px;
+	.container{
+		.row{
+			.col-md-3{
+				ul{
+					color: #777;
+				    font-family:$mainfont;
+				    font-size: $smallfonts;
+				    margin-bottom: 25px;
+				    position: absolute;
+				    width: 262px;
+					li{
+						width: 100%;
+						span{
+						    color: #666;
+						    font-size: 0.9em;
+							padding: 12px 0 12px 18px;
+							text-decoration: none;
+							border-bottom: 1px solid #EDEDDE;
+							font-family: $mainfont;
+							width:100%;
+							display:block;
+							transition: all 0.2s ease;
+							cursor: pointer;
+							&:hover{
+								background: lighten($lightgrey,10%);
+							}
+							&:before{
+								// font-size: $smallfonts;
+								position: absolute;
+								left: 10px;
+								font-family: fontAwesome;
+								// color: black;
+							}
+						}
+					}
+				}
+			}
+			.col-md-9{
+				font-family: $mainfont;
+				color: $textcolors;
+				// owl carousel plugin customize start 
+				.owl-carousel{
+					padding-top: 15px;
+					&:hover .owl-nav{
+						display: block;
+					}
+					.owl-nav{
+						position: absolute ;
+						top:125px ;
+						width: 100%;
+						display: none;
+						.owl-prev{
+							position: absolute;
+							left: 0;
+							color:transparent;
+							width: 32px;
+							height: 32px;
+							border-radius: 100%;
+							background-image: url("../img/buttons/prev.png");
+							background-repeat: no-repeat;
+							opacity: 0.2;
+						}
+						.owl-next{
+							position: absolute;
+							right: 0;
+							color:transparent;
+							width: 32px;
+							height: 32px;
+							border-radius: 100%;
+							background-image: url("../img/buttons/next.png");
+							background-repeat: no-repeat;
+							opacity: 0.2;
+						}
+					}
+					.owl-dots{
+						text-align: right;
+						padding: 6px 4px 17px 4px;
+						span{
+						width: 5px;
+						height: 5px;
+						background: #5a5667;
+						margin:4px; 
+						}
+						.owl-dot{
+						width: 15px;
+						height: 15px;
+						margin-right: 15px;
+						margin-top: 20px;
+						}
+						.active{
+							width: 15px;
+							height: 15px;
+							background: rgba(197, 177, 177, 0.69);
+							border:1px solid rgb(103, 85, 85);
+							border-radius: 100%;
+							box-shadow:0px 0px 9px 2px;
+						}
+					}
+				}
+				// owl carousel plugin customize end 
+				#who-we-are{
+					h2{
+					@include bigtext;				
+					}
+					.text01{
+						font-size: $medfonts;
+						font-weight: 300;
+						margin-bottom: 25px;
+						color:#777;
+					}
+					.text02{
+						font-size: $smallfonts;
+						line-height: 24px;
+						margin-bottom: 20px;
+						color:#777;
+					}
+					hr{
+						@include separator;
+					}
+				}
+				#history{
+					h2{
+						@include bigtext;
+					}
+					.row{
+						.col-md-7{
+							img{
+								width: 41.6%;
+								float: left;
+								margin:25px 20px 15px 0;
+								opacity:0;
+							}
+							p{
+								margin-top: 20px;
+								margin-bottom: 10px;
+								line-height: 24px;
+								font-family: $mainfont;
+								color: #777;
+								font-size: $smallfonts;
+							}
+						}
+						.col-md-5{
+							ul{
+								margin-top:10px; 
+								li{
+									border-bottom: 1px solid #DBDBDB;
+									margin-top: 9px;
+									padding-bottom: 10px;
+									padding-top: 10px;
+									display: block;
+									color: #777;
+									opacity: 0;
+									strong{
+										color:#e04622;
+										font-size: 1.2em;
+										font-weight: 700;
+									}
+								}
+							}
+						}
+					}
+					hr{
+						@include separator;
+					}
+				}
+				#mission{
+					opacity: 0;
+					.row{
+						.col-md-6{
+							color: $textcolors;
+							div{
+								margin-top: 25px;
+								text-align: center;
+								&:before{
+									font-family: "simple-line-icons";
+									font-size: 40px;
+									color: $orange;
+								}
+							}
+							h2{
+								text-align: center;
+								font-weight: 300;
+								margin-bottom: 15px;
+								letter-spacing: -1px;
+							}
+							p{
+								text-align: center;
+								margin-bottom: 20px;
+								color: #777;
+							}
+						}
+					}
+					hr{
+						@include separator;
+					}
+				}
+				#leadership{
+					h2{
+						@include bigtext;
+					}
+					.row{
+						.col-md-6{
+							img{
+								width: 160px;
+								float: left;
+								margin-right: 21px;
+							}
+							h5{
+								margin-bottom: 5px;
+								font-size: 1em;
+								font-weight: 600;
+								color: #1d2127;
+								small{
+									font-weight: 300;
+									font-size: 73.5%;
+									color: #777;
+								}
+							}
+							p{
+								font-size: 12px;
+								padding: 10px;
+								color: #777;
+								line-height: 20px;
+							}
+						}
+					}
+					hr{
+						@include separator;
+					}
+				}
+				#partners{
+					padding-bottom: 50px;
+					h2{
+						@include bigtext;
+						margin-bottom: 55px;
+					}
+					.row{
+						overflow: hidden;
+						.col-md-4{
+							
+							padding:30px; 
+							&:before{
+								border-left: 1px dashed #DADADA;
+								height: 100%;
+    							top: 0;
+    							left: -1px;
+    							content: '';
+    							position: absolute;
+							}
+							&:after{
+								border-bottom: 1px dashed #DADADA;
+								width: 100%;
+    							top: auto;
+    							left: 0px;
+    							bottom: -1px;
+    							content: '';
+    							position: absolute;
+							}
+						}
+					}
+				}			
+			}
+		}
+	}
+}
+
+// company02 section end

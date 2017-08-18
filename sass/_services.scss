@@ -1,0 +1,168 @@
+@import "variables";
+@import "mixins";
+
+
+// services01 section start
+#services01{
+	height: 250px;
+	width: 100%;
+	background: $sectioncolor;
+	.container{
+		.row{
+			.col-md-12{
+				text-align: right;
+				h1{
+					margin-top:161px; 
+					font-family: $mainfont;
+					font-size: 2.6em; 
+					color:$orange;
+					font-weight: 300;
+					letter-spacing: -1px;
+				}
+			}
+		}
+	}
+}
+// services01 section end
+
+// services02 section start
+#services02{
+	padding-top: 40px;
+	.container{
+		.row{
+			.col-md-3{
+				ul{
+					color: #777;
+				    font-family:$mainfont;
+				    font-size: $smallfonts;
+				    margin-bottom: 25px;
+					li{
+						width: 100%;
+						a{
+						    color: #666;
+						    font-size: 0.9em;
+							padding: 12px 0 12px 18px;
+							text-decoration: none;
+							border-bottom: 1px solid #EDEDDE;
+							font-family: $mainfont;
+							width:100%;
+							display:block;
+							transition: all 0.2s ease;
+							cursor: pointer;
+							&:hover{
+								background: lighten($lightgrey,10%);
+							}
+							&:before{
+								// font-size: $smallfonts;
+								position: absolute;
+								left: 25px;
+								font-family: fontAwesome;
+								// color: black;
+							}
+						}
+					}
+				}
+				h4{
+					font-size: 20px;
+				    font-weight: 400;
+				    margin: 0 0 15px 0;
+				    font-family: $mainfont;
+				    padding-top: 25px;
+				}
+				p{
+					color: #777;
+					margin-bottom: 20px;
+					font-size: $smallfonts;
+					line-height: 24px;
+				}
+				.row{
+					.col-md-12{
+						.form-group{
+							label{
+								margin-bottom: 5px;
+								color: #777;
+								font-family: $mainfont;
+								font-size: $smallfonts;
+								line-height: 24px;
+								font-weight: 400;
+							}
+							input{
+								color: #555;
+								border:1px solid #ccc;
+								border-radius: 0;
+								box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+
+							}
+							textarea{
+								color: #555;
+								border:1px solid #ccc;
+								border-radius: 0;
+								box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+							}
+						}
+					}
+					#my-button{
+						color: #ffffff;
+						background-color: #e04622;
+						border-color: #e04622 #e04622 #b63719;
+						border-radius: 0;
+						&:hover{
+							background-color:lighten(#e04622, 5%) 
+						}
+					}
+				}
+			}
+			.col-md-9{
+				padding-top: 21px;
+				padding-bottom: 25px;
+				color: $textcolors;
+				.row{
+					opacity: 0;
+					margin-bottom: 60px;
+					.col-md-12{
+						div{
+							&:first-child{
+								width: 13%;
+								float: left;
+								img{
+									width: 46%;
+									margin-left:27px;
+								}
+							}
+							&:nth-child(2){
+								width: 86%;
+								float: right;
+								color:#1d2127;
+								font-family: $mainfont;
+								h4{
+									font-size: 20px;
+								    font-weight: 400;
+								    margin: 0 0 12px 0;
+								    font-family: $mainfont;
+								}
+								p{
+									color: #777;
+									margin-bottom: 20px;
+									font-size: $smallfonts;
+									line-height: 24px;
+								}
+								a{
+									color: $orange;
+									text-decoration: none;
+									&:hover{
+										text-decoration: underline;
+									}
+								}
+								i{
+									color: $orange;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// services02 section end

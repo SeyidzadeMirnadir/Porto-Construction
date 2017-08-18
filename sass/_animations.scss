@@ -1,0 +1,35 @@
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+  animation-duration:0.9s;
+}
+
+
+@keyframes animateRight {
+  from {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+#animateRight{
+	animation-name:animateRight;
+	animation-duration:2s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}

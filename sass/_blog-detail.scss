@@ -1,0 +1,261 @@
+@import "variables";
+@import "mixins";
+
+
+#blog-detail{
+	.container{
+		.row{
+			.col-md-12{
+				.row{
+					.col-md-1{
+						width:6.33333%;
+						padding-right: 0;
+						margin-right: 0;
+						.date{
+							width: 12%;
+							height: 60px;
+							margin-top: 30px;
+							font-family: $mainfont;
+							.day{
+								width: 38px;
+								height: 38px;
+								background: #f7f7f7;
+								display: block;
+								color: $orange;
+								font-size: 18px;
+								font-weight: bold;
+								padding:8px;
+								box-sizing:border-box;
+								text-align: center; 
+							}
+							.month{
+								width: 38px;
+								height: 19px;
+								background: $orange;
+								color:$white;
+								font-size: 0.9em;
+								padding: 0 10px 2px;
+								text-align: center;
+							}
+						}
+					}
+					.col-md-11{
+						font-family: $mainfont;
+						padding-left: 0;
+						margin-left: 0;
+						padding-right: 0;
+						margin-right: 0;
+						h1{
+							margin-bottom: 15px;
+							font-size: 2.6em;
+							line-height: 44px;
+							color: #1d2127;
+							font-weight: 300;
+							letter-spacing: -1;
+						}
+						.metas{
+							margin-bottom: 20px;
+							font-size: 0.9em;
+							color: #777;
+							span{
+								padding-right: 8px;
+								a{
+									color: #e04622;
+								}
+							}
+						}
+						.text-img{
+							width:360px;
+							margin-left: 25px;
+							margin-bottom: 15px;
+						}
+						.first{
+							font-size: 21px;
+							margin-bottom: 20px;
+							font-weight: 300;
+							line-height: 1.4;
+							color: #777;
+						}
+						.others{
+							line-height: 24px;
+							margin-bottom: 20px;
+							font-size: 14px;
+							color: #777;
+						}
+						.adds{
+							padding-bottom: 5px;
+							padding-top: 10px;
+						}
+						.author{
+							border-top:1px solid #DDD;
+							padding: 20px 0 55px 0;
+							margin-top: 25px;
+							h4{
+								margin-bottom: 15px;
+								margin-top: 25px;
+							    font-size: 1.4em;
+							    font-weight: 400;
+							    letter-spacing: normal;
+							    line-height: 27px;
+							    color:#1d2127;
+							}
+							div{
+								margin-right: 20px;
+								border:1px solid #ddd;
+								float: left;
+								padding: 4px;
+								display: inline-block;
+								a{
+									.author-img{
+										width: 80px;
+										height: 80px;
+									}
+								}
+							}
+							.name{
+								font-size: 1.1em;
+								color: #777;
+							}
+							.text{
+								font-size: 0.9em;
+								line-height: 22px;
+								color: #777;
+								margin: 0;
+							}
+						}
+						.comments{
+							border-top:1px solid #DDD;
+							padding: 30px 0 52px 0;
+							margin-top: 25px;
+							border-bottom:1px solid #DDD;
+							margin-bottom: 75px;
+							h4{
+								margin-bottom: 15px;
+								margin-top: 25px;
+							    font-size: 1.4em;
+							    font-weight: 400;
+							    letter-spacing: normal;
+							    line-height: 27px;
+							    color:#1d2127;
+							}
+							.bgk-img{
+								margin-right: 20px;
+								border:1px solid #ddd;
+								float: left;
+								padding: 4px;
+								display: inline-block;
+								margin-top: 22px;	
+								a{
+									.comments-img{
+										width: 80px;
+										height: 80px;
+									}
+								}
+							}
+							.pop{
+								display: inline-block;
+								width: 89.5%;
+								background: #F4F4F4;
+								padding: 12px 20px 5px;
+								margin-top: 22px;
+								position: relative;
+								.square{
+								    border-bottom: 15px solid transparent;
+								    border-right: 15px solid #F4F4F4;
+								    border-top: 15px solid transparent;
+								    height: 0;
+								    width: 0;
+								    position: absolute;
+								    top: 28px;
+								    left: -15px;
+								}
+								.name{
+									font-size: 1.1em;
+									color: #777;
+									span{
+										a{
+											font-family: $mainfont;
+											color:$orange;
+											font-size: 1em;
+											line-height: 21px;
+											text-decoration: none;
+											i{
+												color:$orange;
+												font-size: 1em;
+												line-height: 21px;
+											}
+										}
+									}
+								}
+								.text{
+									font-size: 0.9em;
+									line-height: 22px;
+									margin:0;
+									color: #777;
+								}
+								span{
+									color:#999;
+									font-size: 0.9em;
+									line-height: 24px;
+								}
+							}
+							.inner-img{
+								margin-left: 111px;
+							}
+							.innerpop{
+								width: 79.2%;
+							}	
+						}
+						h4{
+							margin-bottom: 15px;
+							margin-top: 25px;
+						    font-size: 1.4em;
+						    font-weight: 400;
+						    letter-spacing: normal;
+						    line-height: 27px;
+						    color:#1d2127;
+						}
+						.form-group{
+							label{
+								margin-bottom: 5px;
+								color: #777;
+								font-family: $mainfont;
+								font-size: $smallfonts;
+								line-height: 24px;
+								font-weight: 400;
+							}
+							input{
+								color: #555;
+								border:1px solid #ccc;
+								border-radius: 0;
+								box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+
+							}
+							textarea{
+								height: 200px;
+								color: #555;
+								border:1px solid #ccc;
+								border-radius: 0;
+								box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+							}
+						}
+						.mg-bt{
+							margin-bottom: 50px;
+						}
+						#my-button{
+							color: #ffffff;
+							background-color: #e04622;
+							border-color: #e04622 #e04622 #b63719;
+							border-radius: 0;
+							padding: 10px 16px;
+							font-size: 18px;
+							&:hover{
+								background-color:lighten(#e04622, 5%) 
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

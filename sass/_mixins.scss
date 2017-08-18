@@ -1,0 +1,12 @@
+@mixin bigtext {
+	width: 100%;
+	font-size:$bigfonts;
+	font-weight: 300;
+	margin-bottom: 26px;
+}
+@mixin separator{
+	background: #DBDBDB;
+	margin: 44px 0 ;
+	height: 1px;
+	border:0;
+}
