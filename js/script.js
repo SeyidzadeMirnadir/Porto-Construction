@@ -9,27 +9,27 @@ $(".myNavbar .myLink a").click(function(event) {
 
 // all onscroll problems start
 window.onscroll=function(){ 
-	var scrollsize=document.body;
-	if (scrollsize.scrollTop>10){
+	var scrollsize=window.pageYOffset;
+	if (scrollsize>10){
 		portoIcon.style.marginLeft='-40px';
 		dropPicture.style.top='-400px';
 		myNavbar.style.top="0px";
 		myNavbar.style.opacity="0.9"
-		if(scrollsize.scrollTop>177){
+		if(scrollsize>177){
 			$("#company02 .col-md-3 ul").css({
 				position: 'fixed',
 				top: '99px'
 			});
-			if(scrollsize.scrollTop>200){
+			if(scrollsize>200){
 				$("#scrollButton").css('display', 'block');
-				if(scrollsize.scrollTop>649){
+				if(scrollsize>649){
 					 $(".section03 .container .row").eq(1).addClass('slideInUp');
 					 $(".section03 .container .row").eq(1).css('opacity',"1");
-					 if(scrollsize.scrollTop>822){
+					 if(scrollsize>822){
 					 	$(".section03 .container .row").eq(2).addClass('slideInUp');
 					 	$(".section03 .container .row").eq(2).css('opacity',"1");
 					 }
-					 if(scrollsize.scrollTop>2210){
+					 if(scrollsize>2210){
 					 	$("#company02 .col-md-3 ul").css({
 							position: 'absolute',
 							top: '2019px'
@@ -53,19 +53,19 @@ window.onscroll=function(){
 	}
 
 // company page scroll problem start
-	if(scrollsize.scrollTop>195){
+	if(scrollsize>195){
 		$("#company02 .col-md-3 ul span").removeClass('active')
 		$("#company02 .col-md-3 ul span").eq(0).addClass('active')
-	 	if(scrollsize.scrollTop>981){
+	 	if(scrollsize>981){
 			$("#company02 .col-md-3 ul span").removeClass('active')
 			$("#company02 .col-md-3 ul span").eq(1).addClass('active')
-			if(scrollsize.scrollTop>1414){
+			if(scrollsize>1414){
 				$("#company02 .col-md-3 ul span").removeClass('active')
 				$("#company02 .col-md-3 ul span").eq(2).addClass('active')
-				if(scrollsize.scrollTop>1711){
+				if(scrollsize>1711){
 					$("#company02 .col-md-3 ul span").removeClass('active')
 					$("#company02 .col-md-3 ul span").eq(3).addClass('active')
-					if(scrollsize.scrollTop>2042){
+					if(scrollsize>2042){
 						$("#company02 .col-md-3 ul span").removeClass('active')
 						$("#company02 .col-md-3 ul span").eq(4).addClass('active')
 					}
@@ -73,24 +73,24 @@ window.onscroll=function(){
 			}
 		}
 	}
-	if(scrollsize.scrollTop>638){
+	if(scrollsize>638){
 		$("#history .col-md-7 img").addClass('slideInUp')
 		$("#history .col-md-5 ul li").eq(0).addClass('slideInUp')
 		$("#history .col-md-7 img").css('opacity', '1');
 		$("#history .col-md-5 ul li").eq(0).css('opacity', '1');
-		if(scrollsize.scrollTop>809){
+		if(scrollsize>809){
 			$("#history .col-md-5 ul li").eq(1).addClass('slideInUp')
 			$("#history .col-md-5 ul li").eq(1).css('opacity', '1');
-			if(scrollsize.scrollTop>869){
+			if(scrollsize>869){
 				$("#history .col-md-5 ul li").eq(2).addClass('slideInUp')
 				$("#history .col-md-5 ul li").eq(2).css('opacity', '1');
-				if(scrollsize.scrollTop>935){
+				if(scrollsize>935){
 					$("#history .col-md-5 ul li").eq(3).addClass('slideInUp')
 					$("#history .col-md-5 ul li").eq(3).css('opacity', '1');
-					if(scrollsize.scrollTop>995){
+					if(scrollsize>995){
 						$("#history .col-md-5 ul li").eq(4).addClass('slideInUp')
 						$("#history .col-md-5 ul li").eq(4).css('opacity', '1');
-						if(scrollsize.scrollTop>1175){
+						if(scrollsize>1175){
 							$("#mission").addClass('slideInUp')
 							$("#mission").css('opacity', '1');
 						}
@@ -101,23 +101,23 @@ window.onscroll=function(){
 	}// company page scroll problem end
 
 	// services page scroll problem start
-	if(scrollsize.scrollTop>172){
+	if(scrollsize>172){
 		$("#services02 .col-md-9 .row").eq(2).addClass("slideInUp")
 		$("#services02 .col-md-9 .row").eq(2).css("opacity","1")
-		if(scrollsize.scrollTop>360){
+		if(scrollsize>360){
 			$("#services02 .col-md-9 .row").eq(3).addClass("slideInUp")
 			$("#services02 .col-md-9 .row").eq(3).css("opacity","1")
 			// services-detail page start
-			if(scrollsize.scrollTop>500){
+			if(scrollsize>500){
 				$("#services-detail02 .detail-side ul li").eq(0).css('opacity', '1');
 				$("#services-detail02 .detail-side ul li").eq(0).addClass('slideInUp');
-				if(scrollsize.scrollTop>580){
+				if(scrollsize>580){
 					$("#services-detail02 .detail-side ul li").eq(1).css('opacity', '1');
 					$("#services-detail02 .detail-side ul li").eq(1).addClass('slideInUp');
-					if(scrollsize.scrollTop>640){
+					if(scrollsize>640){
 						$("#services-detail02 .detail-side ul li").eq(2).css('opacity', '1');
 						$("#services-detail02 .detail-side ul li").eq(2).addClass('slideInUp');
-						if(scrollsize.scrollTop>720){
+						if(scrollsize>720){
 							$("#services-detail02 .detail-side ul li").eq(3).css('opacity', '1');
 							$("#services-detail02 .detail-side ul li").eq(3).addClass('slideInUp');
 						}
@@ -241,9 +241,8 @@ buttonIcon02.click(function(){
 // scrollUp button start
 $("#scrollButton").click(function() {
   var intervalId = setInterval(function () { 
-       var s = document.body;
-       if (s.scrollTop > 0) {
-         s.scrollTop -= 15;
+       if (document.documentElement.scrollTop > 0) {
+         document.documentElement.scrollTop -= 15;
        } 
        else {
            clearInterval(intervalId);
